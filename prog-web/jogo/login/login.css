@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.form {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ededed;
+    border: 1px solid #bdbdbd;
+    border-radius: 30px;
+}
+.login {
+    text-align: center;
+    width: calc(50% - 75px);
+}
+.form .sign-in {
+    padding: 25px;
+    vertical-align: text-bottom;
+    display: inline-block;
+}
+.form .sign-up {
+    display: inline-block;
+    border-left: 1px solid #bdbdbd;
+    padding: 25px;
+}
+.form .input label{
+    display: block;
+    font-weight: 600;
+    margin: 5px 0 2px 0;
+    font-size: 13px;
+}
+.form .input input{
+    border-radius: 3px;
+    border: 1px solid #bdbdbd;
+}
+button {
+    background-color: #585858;
+    border: 1px solid #585858;
+    border-radius: 5px;
+    margin-top: 25px;
+    width: 100px;
+    color: #fff;
+}

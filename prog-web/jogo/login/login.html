@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="login.js"></script>
+  <link href="login.css" rel="stylesheet">
+  <title>Login</title>
+</head>
+
+<body>
+  <form class="form" method="post" onsubmit="return validator(this);">
+    <div class="login sign-in">
+      <div class="input">
+        <label>Nome de usuário:</label>
+        <input id="usuario" name="usuario" minlength="4" maxlength="15" type="text">
+      </div>
+      <div class="input">
+        <label>Senha:</label>
+        <input id="password" name="password" minlength="4" maxlength="4" type="password">
+      </div>
+      <button id="buttonEntrar" type="button">Entrar</button>
+    </div>
+    <div class="login sign-up">
+      <div class="input">
+        <label>Nome de usuário:</label>
+        <input id="user" name="user" minlength="4" maxlength="15" type="text">
+      </div>
+      <div class="input">
+        <label>Senha:</label>
+        <input id="passw" name="passw" minlength="4" maxlength="4" type="password">
+      </div>
+      <div class="input">
+        <label>Confirmar senha:</label>
+        <input id="passwConf" name="passwConf" type="password">
+      </div>
+      <div class="input">
+        <label>País:</label>
+        <input id="country" name="country" type="text">
+      </div>
+      <button id="buttonCadastro" type="button">Cadastrar</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="../global.css" rel="stylesheet">
+  <script src="cadastro.php"></script>
+  <title>Cadastre-se</title>
+</head>
+
+<body>
+  <h1>Vamos jogar? Cadastre-se agora!</h1>
+  <form class="form" method="post" action="cadastro.php">
+    <div class="sign-up">
+      <div class="input">
+        <label>Nome de usuário:</label>
+        <input id="login" name="login" required minlength="4" maxlength="15" type="text">
+      </div>
+      <div class="input">
+        <label>Senha:</label>
+        <input id="senha" name="senha" required minlength="4" maxlength="4" pattern="[0-9]+$" type="password"
+          title="Que erro">
+      </div>
+      <div class="input">
+        <label>Confirmar senha:</label>
+        <input id="senhaConfirm" required name="senhaConfirm" type="password">
+      </div>
+      <button id="buttonCadastro" type="submit">Cadastrar</button>
+    </div>
+  </form>
+</body>
+
+</html>

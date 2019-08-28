@@ -3,27 +3,25 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+h1, h2 {
+    text-align: center;
+    color: #585858;
+    margin: 20px 0 30px;
+}
 .form {
-    width: 80%;
+    width: 20%;
     margin: 0 auto;
     background-color: #ededed;
     border: 1px solid #bdbdbd;
-    border-radius: 30px;
+    border-radius: 20px;
 }
-.login {
-    text-align: center;
-    width: calc(50% - 75px);
-}
-.form .sign-in {
-    padding: 25px;
-    vertical-align: text-bottom;
-    display: inline-block;
-}
+.form .sign-in,
 .form .sign-up {
-    display: inline-block;
-    border-left: 1px solid #bdbdbd;
-    padding: 25px;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
 }
+
 .form .input label{
     display: block;
     font-weight: 600;
@@ -41,4 +39,22 @@ button {
     margin-top: 25px;
     width: 100px;
     color: #fff;
+}
+.link-div {
+    width: 100%;
+    text-align: center;
+}
+.lnk-ref {
+    text-decoration: none;
+    font-size: 11px;
+}
+@media (min-width: 800px) and (max-width: 1110px) {
+    .form {
+        width: 80%;
+    }
+}
+@media (max-width: 800px) {
+    .form {
+        width: 50%;
+    }
 }

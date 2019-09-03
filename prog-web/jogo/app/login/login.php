@@ -3,7 +3,7 @@ session_start();
 
 $hoje = date("Y-m-d");
 include '../conecta.php';
-//var_dump($dbh);
+// var_dump($dbh);
 
 $login = $_POST["login"];
 $senha_usr = md5($_POST["senha"]);
@@ -22,9 +22,9 @@ if($num_reg > 0 ){
 	  $data = $rs['data'];
 	}
 	if($senha_usr == $senha){
-		echo "Senha ok\n";
-		echo "<a href='../jogo/jogo.php'>Ir para jogo</a>";
+		header('location: ../jogo/jogo.html');
 	}else{
+        // @TODO PÁGINA SENHA INVÁLIDA
 		echo "Senha inválida<br>";
 		echo "<a href='login.php'>Voltar</a>";
     }
@@ -41,9 +41,11 @@ if($num_reg > 0 ){
 
     $num_ins= $stmt->rowcount();
     if($num_ins == 1){
+        // @TODO CRIAR PÁGINA PARA USUÁRIO CADASTRADO
         echo "Usuário cadastrado<br>";
         echo "<a href='../jogo/jogo.php'>Ir para jogo</a>";
     }else{
+        // @TODO CRIAR PÁGINA NÃO FOI POSSÍVEL CADASTRAR
         echo "Não foi possível cadastrar novo usuário<br>";
         echo "<a href='login.php'>Voltar</a>";
     }

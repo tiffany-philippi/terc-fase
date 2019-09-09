@@ -1,0 +1,12 @@
+﻿<html>
+  <head>
+    <title>Sistema 1</title>
+  <body>
+    <h1 align="center" style="color:blue">SISTEMA WEB 1</h1>
+    
+    <?php 
+      echo '<p align="center">Meu primeiro site!</p>';
+    ?>
+
+  </body>
+</html>

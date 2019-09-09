@@ -1,5 +1,5 @@
 <?php
-$dsn = "mariadb:dbname=progweb_dev;host=localhost";
+$dsn = "mysql:dbname=progweb_dev;host=localhost";
 $usr = "root";
 $senha = "";
 
